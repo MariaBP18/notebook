@@ -6,7 +6,7 @@ fileList = getFileList(inputDirectory);
 
 for (i = 0; i < fileList.length; i++) {
 	file = inputDirectory + fileList[i];
-    Ext.setId(file)
+    	Ext.setId(file)
 	print("Processing: " + file);
 	Ext.openImagePlus(file);
 	//check if id is better than title
@@ -20,9 +20,9 @@ for (i = 0; i < fileList.length; i++) {
 	dotIndex = indexOf(title, ".");
 	name = substring(title, 0, dotIndex);
 	saveAs("Tiff", outputDirectory + name + ".tif");
-    getDimensions(w, h, channels, s, f);
-    print(channels);
-    close();
+    	//getDimensions(w, h, channels, s, f);
+    	//print(channels);
+    	close();
 	//selectImage(imageid);
 	selectWindow(czititle);
 	run("Z Project...", "projection=[Max Intensity]");
@@ -31,8 +31,8 @@ for (i = 0; i < fileList.length; i++) {
 	name = substring(title, 0, dotIndex);	
 	saveAs("Tiff", outputDirectory + name + ".tif");
 	getDimensions(w, h, channels, s, f);
-    print(channels);
-    close();
+    	//print(channels);
+    	close();
 	Ext.close();
 	close("*");}
 exit("error message");
