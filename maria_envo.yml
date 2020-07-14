@@ -1,4 +1,4 @@
-name: RPY
+name: ImageJ
 channels:
   - conda-forge
   - defaults
@@ -283,7 +283,6 @@ dependencies:
     - docopt==0.6.2
     - pillow==7.2.0
     - pipreqs==0.4.10
-    - wxpython==4.1.0
     - yarg==0.1.9
 prefix: /opt/anaconda3/envs/RPY
 
